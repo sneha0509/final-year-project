@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  margin: 0;
+}
+
+
+  
+#main_content
+{
+ margin-top:30px;
+ width:1200px;
+ margin-left:200px;
+}
+#main_content li
+{
+ display:inline;
+ list-style-type:none;
+ 
+ padding:10px;
+ border-radius:5px 5px 0px 0px;
+  
+ font-weight:bold;
+ cursor:pointer;
+}
+#main_content li.notselected
+{
+ background-color:rgb(175, 167, 167);
+ color:rgb(3, 5, 7);	
+}
+#main_content li.selected
+{
+ background-color:#0acafa;
+ color:white;	
+}
+#main_content .hidden_desc
+{
+ display:none;
+ visibility:hidden;
+}
+#main_content #page_content
+{
+ 
+ padding:10px;
+ margin-top:9px;
+ border-radius:0px 5px 5px 5px;
+ color:#2E2E2E;
+ line-height: 1.6em;
+ word-spacing:4px;
+}

@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* Top to Bottom */
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Introduction */
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 1.5rem 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+#heading{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 60%;
+    line-height: 1.2;
+    text-align: left;
+    padding: 1rem;
+}
+#heading p{
+    padding: 2rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #464d65;
+    font-family: "Muli",sans-serif;
+}
+#heading h1{
+    font-weight: bolder;
+    color: #002d5b;
+    font-size: 3.5rem;
+}
+.image{
+    flex: 40%;
+}
+.image img{
+    width: 32rem;
+}
+.donate{
+    background-color: #247AFD;
+    padding: 20px 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    /* transition: color .4s linear;
+    position: relative;
+    z-index:1;    */
+    border: 0;
+    /* overflow: hidden;
+    margin: 0%; */
+    color: white;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 1);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;
+	overflow: hidden;
+}
+.donate:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	opacity: 1;
+	-webkit-transform: translate(-105%, 0);
+	transform: translate(-105%, 0);
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: rgba(255, 255, 255, 1);
+	background-color: rgba(255, 255, 255, 0.25);
+}
+.donate:hover:before {
+	opacity: 0.3;
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+.donate:hover{
+    cursor: pointer;
+}
+.services{
+    background-color: #f8fcff;
+    padding: 27px 44px;
+}
+.content{
+    margin: 2.5rem 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+.content p{
+    color: #247AFD;
+    font-size: 1.2rem;
+    padding: 1rem;
+    font-family: "Muli",sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    letter-spacing: .05em;
+}
+.content h1{
+    color: #072366;
+    font-family: "Muli",sans-serif;
+    /* font-weight: 800; */
+    display: block;
+    line-height: 1.4;
+    font-size: 2.625rem;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    transition:all 0.2s linear;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+#card1,#card2,#card3{
+    /* width: 50%; */
+    text-align: center;
+    width: 18rem;
+    min-height: 350px;
+    border-radius: 10px;
+    height: fit-content; 
+    /* flex: 1 1 250px; */
+    margin: 20px;
+    /* padding: 1rem; */
+    padding: 5rem 1.3rem;
+    box-shadow: 0 0 20px #7e8383;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card_image{
+    width: 100%;
+}
+.card_content h2{
+    color: #1c165c;
+    font-size: 1.5625rem;
+    margin-top: 1.7rem;
+}
+.card_content p{
+    font-size: 1rem;
+    color: #57667E;
+    line-height: 1.5;
+    padding: 1rem 0.7rem;
+}
+#card1:hover,#card2:hover,#card3:hover{
+    cursor: pointer;
+    transition: 0.2s linear;
+    transform: scale(1.1);
+}
+/* About US */
+.about_us{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.about_us #about {
+    color: #247AFD;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+.about_us h2, .registered_ngos h2{
+    color: #072366;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 1.4;
+    font-size: 2.625rem;
+}
+.about_us #content{
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1.3rem 0;
+    color: #64676c;
+}
+.about_content
+{
+    flex: 65%;
+    padding: 2rem 3rem;
+}
+.about_image{
+    flex: 35%;
+}
+/* Registered NGOs */
+.registered_ngos{
+    background-color: #f8fcff;
+    padding: 25px 44px;
+}
+.registered_ngos .cards, .volunteers .cards{
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    margin: auto;
+    flex-wrap: wrap;
+    transition:all 0.2s linear;
+    justify-content: space-evenly;
+}
+.card1,.card2,.card3{
+    /* width: 50%; */
+    width: 18rem;
+    border-radius: 10px;
+    height: fit-content; 
+    /* flex: 1 1 250px; */
+    margin: 20px;
+    box-shadow: 0 0 20px #7e8383;
+}
+.card-content{
+    padding: 1rem;
+}
+.card-image img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: auto;
+} 
+.join-button{
+    /* display: grid;
+    place-items: center; */
+    padding: 12px;
+}
+.join{
+    background-color: #247AFD;
+    outline: none;
+    padding: 12px;
+    width: 100%;
+    letter-spacing: 0.1em;
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+    border: none;
+    margin: 1rem 0;
+}
+.join:hover{
+    cursor: pointer;
+}
+.registered_ngos h3{
+    color: #1c165c;
+    font-size: 1.5625rem;
+    text-align: center;
+}
+.registered_ngos p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #64676c;
+}
+.card1:hover,.card2:hover,.card3:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.4s linear;
+}
+/* Volunteers */
+.volunteers{
+    padding: 27px 44px;
+}
+.volunteers h2{
+    text-align: center;
+    color: #072366;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 1.5;
+    font-size: 2.625rem;
+    margin-bottom: 1.5rem;
+}
+.volunteers h3{
+    color: #1c165c;
+    font-size: 1.5625rem;
+    text-align: center;
+}
+.volunteers p{
+    font-weight: 800;
+    padding: 0.5rem 0 0 0;
+    text-align: center;
+}
+/* News & Events */
+.news_events{
+    padding: 30px 44px;
+    background-color: #f8fcff;
+}
+.news_events h2{
+    color: #072366;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 2.625rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+.news_events .card-content p{
+    line-height: 1.5;
+    font-size: 1rem;
+}
+.news_events .time{
+    padding: 0.5rem 0;
+    font-size: 12px;
+    color: #777;
+}
+.news_events_btn a{
+    width: 18rem;
+    background-color: #072366;
+}
+/* Stats */
+.stats{
+    padding: 27px 44px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+}
+#stat_card1{
+    background-color: #e7c12d;
+}
+#stat_card2{
+    background-color: #ea2c58;
+}
+#stat_card3{
+    background-color: #91d214;
+}
+.stats .stat_card{
+    padding: 1.5rem;
+    width: 15rem;
+    min-height: 250px;
+}
+.stat_card h3{
+    font-size: 1.2rem;
+}
+.stat_card p{
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.stat_card h3{
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+}
+.join-button button{
+    width: 12rem;
+    display: block; 
+    margin: 1.5rem auto;
+}
+#view_more{
+    width: 18rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+}
+/* Responsive Media Queries*/
+@media screen and (max-width:992px){
+    .intro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+        text-align: center;
+    }
+    #heading{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        /* flex: 60%; */
+        line-height: 1.2;
+        text-align: left;
+        padding: 1rem;
+    }
+    #heading p{
+        padding: 2rem 0;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #464d65;
+        font-family: "Muli",sans-serif;
+    }
+    #heading h1{
+        font-weight: bolder;
+        color: #002d5b;
+        font-size: 3.5rem;
+    }
+    .image img{
+        width: 20rem;
+        display: block;
+        margin: auto;
+    }
+    #card1,#card2,#card3{
+        text-align: center;
+        width: 20rem;
+        min-height: 250px;
+        /* flex: 1 1 250px; */
+        margin: 20px;
+        /* padding: 1rem; */
+        padding: 3rem 1rem;
+    }
+    .about_us{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .about_us h2, .registered_ngos h2{
+        font-size: 2.5rem;
+    }
+    .about_content
+    {
+        /* flex: 100%;  */
+        padding: 2rem 3rem;
+    }
+    .about_image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about_image img{
+        /* flex: 100%; */
+        width: 18rem;
+        display: block; 
+        margin: 1.5rem auto;
+    } 
+    .registered_ngos{
+        background-color: #f8fcff;
+        padding: 25px 44px;
+    }
+    .registered_ngos h2{
+        font-size: 2.5rem;
+    }
+    .card1,.card2,.card3{
+        width: 19rem;
+        min-height: 300px; 
+        margin: 0px 20px 3rem 20px;
+    }
+    .volunteers h2{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .volunteers h3{
+        color: #1c165c;
+        font-size: 1.5625rem;
+        text-align: center;
+    }
+    .news_events{
+        padding: 2.5rem 44px;
+    }
+    #view_more{
+        width: 15rem;
+        margin: 1rem 0;
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+    }
+    .join-button button{
+        width: 15rem;
+    }
+    .news_events h2{
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+    .stats .stat_card{
+        margin: 20px;
+    }
+}

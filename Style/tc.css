@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.terms{
+    padding: 1rem;
+    margin: 0.5rem;
+}
+h1{
+    padding: 1rem;
+}
+p{
+    line-height: 1.5rem;
+    padding-left: 1rem;
+}
+
+/* button{
+    color: #fff;
+    background-color: #0E87CC;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.7rem;
+    border: none;
+    letter-spacing: 1px;
+}
+button:hover{
+    cursor: pointer;
+} */
+@media only screen and (max-width:768px){
+    
+    h1{
+        padding: 0.5rem;
+        font-size: 27px;
+    }
+    .terms{
+        padding: 0.7rem;
+        margin: 0.7rem;
+    }
+    p{
+        line-height: 1.5rem;
+        padding-left: 0.7rem;
+    }
+}

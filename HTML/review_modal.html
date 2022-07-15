@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../Style/review_modal.css">
+<body>
+<div class="w3-container">
+  <!-- <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Review Button</button> -->
+  <div id="id01" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content w3-card-4">
+      <header > 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <centre><h2>Feedback Form</h2></centre>
+      </header><br>
+      <form>
+        <div class="w3-container">
+        
+          <label for='review_name'>Name</label>
+           <input type="text" name="name-rev" id="" placeholder="Enter Name" required><br/>
+          
+          <label for='email-rev'>Email</label>
+           <input type="email" name="rev-email" id="" placeholder="Enter your Email"  required><br/>
+          <label for='Feedback'>Feedback</label>
+           <textarea class="textinput" placeholder="Word Limit:200 Words" maxlength="200" required></textarea>
+        </div>   
+          <div class="btn">
+            <input type="submit" value="Submit"/>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+            
+</body>
+</html>

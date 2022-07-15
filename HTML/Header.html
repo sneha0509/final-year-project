@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Style/Header.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help in One Place</title>
+    <!-- <style>
+      .menu{
+        display: none;
+      }
+    </style> -->
+</head>
+<body>
+  <header class="header">
+    <div class="heading">
+      <h1>Help In One Place</h1>
+    </div> 
+    <div class="links">
+      <a href="#">Donation</a>
+      <a href="Ebook.html">E-Books</a>
+      <a href="#">News & Events</a>
+      <a href="about.html">About Us</a>
+      <a href="ngo_registration.html">NGO Registration</a>
+      <button class="btn-btn-self">Login or Sign Up</button>
+    </div>
+    <div class="hamburger-menu">
+      <div id="nav-icon1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div> 
+  </header>
+  <nav class="mobile-menu" style="display: none;">
+    <div class="menu-links">
+      <a href="#">Donation</a>
+      <a href="Ebook.html">E-Books</a>
+      <a href="#">News & Events</a>
+      <a href="about.html">About Us</a>
+      <a href="ngo_registration.html">NGO Registration</a>
+      <button class="menu-btn">Login or Sign Up</button>
+    </div>
+  </nav>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+        $(this).toggleClass('open');
+        $('.mobile-menu').toggle('slow');
+      });
+    });
+  </script>    
+</body>
+</html>
+
+
+<!-- 
+1 home , review(feedback modal)
+2 about , team, contact 
+3 donation
+4 registration , volunteer, login(modal)
+5 news and events 
+6 dashboard( NGO)
+7 helpline(under thinking) 
+8 Ebook 
+9 search result -->

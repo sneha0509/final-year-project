@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+.cards{
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    margin: auto;
+  /*  height: 10%;*/
+    flex-wrap: wrap;
+    transition:all 0.2s linear;
+    justify-content: space-evenly;
+    font-family: 'Open Sans', sans-serif;
+}
+.card1,.card2,.card3{
+    /* width: 50%; */
+    width: 18rem;
+    border-radius: 10px;
+    /* height: 70%;  */
+    /* flex: 1 1 250px; */
+    margin: 20px;
+    box-shadow: 0 0 20px #7e8383;
+}
+.card-content{
+    padding: 1rem;
+}
+.card-image img{
+    width: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100px;; 
+
+}
+
+ 
+

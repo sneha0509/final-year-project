@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* Our Team */
+.team{
+    padding: 1rem;
+}
+/* Our Team */
+.cards{
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    margin: auto;
+    flex-wrap: wrap;
+    transition:all 0.2s linear;
+    justify-content: space-evenly;
+}
+.card1{
+    /* width: 50%; */
+    width: 18rem;
+    border-radius: 10px;
+    height: fit-content; 
+    /* flex: 1 1 250px; */
+    margin: 20px;
+    box-shadow: 0 0 20px #7e8383;
+}
+.card1:hover{
+    cursor: pointer;
+}
+.card-content{
+    padding: 1rem;
+}
+.card-content h3{
+    font-size: 1.5625rem;
+    font-weight: bold;
+}
+.card-image img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: auto;
+} 
+.join-button{
+    /* display: grid;
+    place-items: center; */
+    padding: 12px;
+}
+.join{
+    background-color: #247AFD;
+    letter-spacing: 0.1em;
+    outline: none;
+    padding: 12px;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: none;
+}
+.join:hover{
+    cursor: pointer;
+}
+/* Search bar */
+.search{
+  padding: 1rem;
+  background-color: rgba(81, 203, 238, 1);
+}
+.searchButton:hover {
+    cursor: pointer;
+}
+input[type=text] {
+    /* width: 50%; */
+    border: none;
+    padding: 11px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 17px;
+    outline: none;
+}
+input[type='text']:focus{
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+.searchButton{
+    font-size: 18px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 14px;
+    background-color: #1d2129;
+    color: white;
+    cursor: pointer;
+}
+.recommended{
+    font-size: 2rem;
+}
+/* Responsive */
+@media only screen and (max-width:768px){
+    .search{
+        width: 100%;
+    }   
+    .recommended{
+        font-size: 1.8rem;
+    }
+    input[type='text']{
+        display: inline-block;
+        width: 80%;
+    }
+    .cards{
+        height: auto;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    label{
+        font-size: 15px;
+    }
+    .map{
+        flex:50%;
+        padding:  1rem 0rem;
+    }
+    input,textarea{
+        width: 100%;
+        display: block;
+        border: 1px solid #dddfe2;
+        color: #1d2129;
+        margin: auto;
+        margin: 0.5rem 0;
+        font-size: 15px;
+        padding: 14px 14px;
+    }
+    input[type='submit']{
+        margin-bottom: 0.8rem;
+    }
+    .mapouter
+    {
+        height:450px;
+        display: block;
+        margin: auto;
+        /* margin-left: 10px; */
+        width:100%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .container {
+      margin: 20px 5px;
+      flex-direction: column;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .image{
+        margin: 3.5rem 0;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+}

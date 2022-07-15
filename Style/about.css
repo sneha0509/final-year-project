@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* About Us */
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 40px;
+}
+.content{
+    padding: 1rem;
+    line-height: 1.5rem;
+    flex: 70%;
+    letter-spacing: 1px;
+}
+.image{
+    width: 100%;
+    flex: 30%;
+}
+.image img{
+    width: 100%; 
+    /* width: 22.5rem; */
+    display: block;
+    margin: auto;
+    height: auto;
+    padding: 1rem;
+}
+/* Our Team */
+.team{
+    padding: 1rem;
+}
+/* Our Team */
+.cards{
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    margin: auto;
+    flex-wrap: wrap;
+    transition:all 0.2s linear;
+    justify-content: space-evenly;
+}
+.card1,.card2,.card3{
+    /* width: 50%; */
+    width: 18rem;
+    border-radius: 10px;
+    height: fit-content; 
+    /* flex: 1 1 250px; */
+    margin: 20px;
+    box-shadow: 0 0 20px #7e8383;
+}
+.card-content{
+    padding: 1rem;
+    line-height: 1.5;
+}
+.card-image img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: auto;
+}
+/* Contact Us*/
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.contact-form{
+    flex:50%;
+}
+label{
+    padding: 1rem 0.3rem;
+    font-size: 17px;
+}
+.map{
+    flex:50%;
+    padding: 1rem;
+}
+input,textarea{
+    width: 100%;
+    padding: 14px 14px;
+    margin: 10px 0;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    outline: none;
+}
+hr{
+    border: 1px solid rgb(229, 229, 231);
+}
+input[type="submit"]{
+    font-size: 17px;
+    color: #fff;
+    box-shadow: 0 0 15px #bac3c3;
+    border-radius: 5px;
+    cursor: pointer;
+    background:linear-gradient(to right, #000000 0%, #403d3e 100%);
+    transition: all 0.3s ease;
+}
+input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background:linear-gradient(to left, #000000 0%, #403d3e 100%)
+}
+
+/* Google Map */
+.mapouter
+{
+    position:relative;
+    text-align:right;
+    height:450px;
+    margin-left: 10px;
+    width:100%;
+}
+.gmap_canvas 
+{
+    overflow:hidden;
+    background:none!important;
+    height:450px;
+    width:100%;
+}
+input:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+  }
+/* Responsive */
+@media only screen and (max-width:768px){
+    .cards{
+        height: auto;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    label{
+        font-size: 15px;
+    }
+    .map{
+        flex:50%;
+        padding:  1rem 0rem;
+    }
+    input,textarea{
+        width: 100%;
+        display: block;
+        border: 1px solid #dddfe2;
+        color: #1d2129;
+        margin: auto;
+        margin: 0.5rem 0;
+        font-size: 15px;
+        padding: 14px 14px;
+    }
+    input[type='submit']{
+        margin-bottom: 0.8rem;
+    }
+    .mapouter
+    {
+        height:450px;
+        display: block;
+        margin: auto;
+        /* margin-left: 10px; */
+        width:100%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .container {
+      margin: 20px 5px;
+      flex-direction: column;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .image{
+        margin: 3.5rem 0;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+}

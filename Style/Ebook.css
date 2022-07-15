@@ -1,0 +1,200 @@
+/* *{padding:0;margin:0;}
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	background-color:#CCC;
+	font-size:24px;
+}
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+} */
+
+.at-float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	 bottom:170px; 
+	right:40px;
+	background-color:#0b03fc;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	z-index:1000;
+	animation: bot-to-top 2s ease-out;
+}
+/* 
+ul{
+	position:fixed;
+	right:40px;
+	padding-bottom:20px;
+	bottom:80px;
+	z-index:100;
+}
+
+ul li{
+	list-style:none;
+	margin-bottom:10px;
+}
+
+ul li a{
+	background-color:#F33;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	width:60px;
+	height:60px;
+	display:block;
+}
+
+ul:hover{
+	visibility:visible!important;
+	opacity:1!important;
+}
+ */
+
+.my-float{
+	font-size:24px;
+	margin-top:50%;
+}
+
+/* a#at-menu-share + ul{
+  visibility: hidden;
+}
+
+a#at-menu-share:hover + ul{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+a#at-menu-share i{
+	animation: rotate-in 0.5s;
+}
+
+a#at-menu-share:hover > i{
+	animation: rotate-out 0.5s;
+} */
+/* 
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+} */
+.data{
+	padding: 1rem;
+	margin: 1rem 0;
+}
+h2{
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bold;
+}
+
+table { 
+	width: 100%; 
+	border-collapse: collapse; 
+  }
+  /* Zebra striping */
+  tr:nth-of-type(odd) { 
+	background: #eee; 
+  }
+  th { 
+	background: rgb(66, 66, 66); 
+	color: white; 
+	font-weight: bold; 
+  }
+  td, th { 
+	padding: 8px 6px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+  }
+  thead{
+	text-align: center;	
+  }
+  .link{
+	  text-align: center;
+  }
+  @media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+  
+	  /* Force table to not be like tables anymore */
+	  table, thead, tbody, th, td, tr { 
+		  display: block; 
+		  text-align: left;
+	  }
+	  .link{
+		  text-align: left;
+	  }
+	  /* Hide table headers (but not display: none;, for accessibility) */
+	  thead tr { 
+		  position: absolute;
+		  top: -9999px;
+		  left: -9999px;
+	  }
+	  
+	  tr { border: 1px solid #ccc; }
+	  
+	  td { 
+		  /* Behave  like a "row" */
+		  border: none;
+		  border-bottom: 1px solid #eee; 
+		  position: relative;
+		  padding-left: 50%; 
+	  }
+	  
+	  td:before { 
+		  /* Now like a table header */
+		  position: absolute;
+		  /* Top/left values mimic padding */
+		  top: 6px;
+		  left: 6px;
+		  width: 45%; 
+		  padding-right: 10px; 
+		  white-space: nowrap;
+	  }
+	  
+	  /*
+	  Label the data
+	  */
+	  td:nth-of-type(1):before { content: "ID"; }
+	  td:nth-of-type(2):before { content: "Title"; }
+	  td:nth-of-type(3):before { content: "Description"; }
+	  td:nth-of-type(4):before { content: "Author"; }
+	  td:nth-of-type(5):before { content: "Publication Year"; }
+	  td:nth-of-type(6):before { content: "View"; }
+  }  

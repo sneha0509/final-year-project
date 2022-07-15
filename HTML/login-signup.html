@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">     -->
+    <link rel="stylesheet" href="../Style/modal.css"/>
+</head>
+<body>
+        <!-- <button type="button" class="btn-btn-self" data-toggle="modal" data-target="#myModal">Sign In or Sign Up</button> -->
+               
+        <!-- Modal -->         
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+    <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-body">
+                                <div class="container1" id="container1">
+                                <div class="form-container sign-up-container">
+                                        <form action="#">
+                                            <h3>Sign Up</h3>
+                                            <div class="social-container">
+                                                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                                            </div > 
+                                                <input class="modal_input" type="text" placeholder="Name" maxlength="20" required />
+                                                <input class="modal_input"type="tel" name="contact" id="" placeholder="Mobile Number" maxlength="10" minlength="10" pattern="[9,6,7]{3}-[0-9]{3}-[0-9]{4}" required> 
+                                                    <input class="modal_input" type="email" placeholder="Email" required/>
+                                                    <input class="modal_input"onkeyup="active()" id="pswrd_1" type="password" placeholder="Enter Password" minlength="8" maxlength="18" required>
+                                                    <input class="modal_input"onkeyup="active_2()" id="pswrd_2" type="password" placeholder="Confirm Password" required>
+                                                <button class="Log-but">Sign Up</button>
+                                        </form>
+                                    </div>
+                                <div class="form-container sign-in-container">
+                                    <form action="#">
+                                        <h1 class="modal_h1">Sign in</h1>
+                                        <div class="social-container">
+                                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                        <span class="modal_span">or use your account</span>
+                                        <input class="modal_input" type="email" placeholder="Email"  required/>
+                                            <input class="modal_input" type="password" placeholder="Password"minlength="8" maxlength="18" required />
+                                        <a href="#">Forgot your password?</a>
+                                        <button class="Log-but" >Sign In</button>
+                                    </form>
+                                </div>
+                                <div class="overlay-container">
+                                    <div class="overlay">
+                                        <div class="overlay-panel overlay-left">
+                                            <h1 class="modal_h1">Welcome Back!</h1>
+                                            <p>To keep connected with us please login with your personal info</p>
+                                            <button class="ghost Log-but" id="signIn">Sign In</button>
+                                        </div>
+                                        <div class="overlay-panel overlay-right">
+                                            <h1>Hello, Friend!</h1>
+                                            <p>Enter your personal details and start journey with us</p>
+                                            <button class="ghost Log-but" id="signUp">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://kit.fontawesome.com/f9275dded9.js" crossorigin="anonymous"></script>
+        <script src="modal_login.js"></script>
+</body>
+</html>
+
+
+<!-- 
+1 home , review(feedback modal)
+2 about , team, contact 
+3 donation
+4 registration , volunteer, login(modal)
+5 news and events 
+6 dashboard( NGO)
+7 helpline(under thinking) 
+8 Ebook 
+9 search result -->

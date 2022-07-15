@@ -1,0 +1,138 @@
+.container{
+    display: block;
+    margin: 1rem;
+}
+select,input,textarea{
+    width: 100%;
+    padding: 14px 14px;
+    margin: 1rem 0;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    outline: none;
+}
+hr{
+    border: 1px solid rgb(229, 229, 231);
+}
+h1{
+    padding: 0.7rem;
+}
+label::after{
+    content: ' *';
+    color: red;
+}
+select:focus,input:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+.btn{
+    display: grid;
+    place-items: center;
+}
+input[type="submit"]{
+    font-size: 17px;
+    color: #fff;
+    width: 22rem;
+    box-shadow: 0 0 15px #bac3c3;
+    border-radius: 5px;
+    cursor: pointer;
+    background:#3586ff;
+    transition: all 0.3s ease;
+}
+input[type="submit"]:hover{
+    letter-spacing: 1px;
+    /* background:linear-gradient(to left, #000000 0%, #403d3e 100%); */
+}
+.founder-details,.registration,.contact-details,.occupations-details{
+    padding: 1rem;
+    /* width: 100%; */
+}
+button:hover{
+    cursor: pointer;
+}
+/* button{
+    color: #fff;
+    background-color: #6da0ec;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.7rem;
+    border: none;
+    letter-spacing: 1px;
+} */
+input[type='submit']{
+    letter-spacing: 1px;
+}
+
+label{
+    padding: 1rem 0.3rem;
+    font-size: 18px;
+}
+
+/* span{
+    padding: 1rem 0.3rem;
+    font-size: 18px;
+} */
+@media only screen and (max-width:768px){
+    label{
+        font-size: 17px;
+    }
+    .comment{
+        font-size: 15px;
+    }
+    /* span{
+        font-size: 15px;
+    } */
+    .btn{
+        display: grid;
+        place-items: center;
+    }
+    input[type='submit']{
+        width: 17rem;
+    }
+    h1{
+        padding: 0.5rem;
+        font-size: 27px;
+    }
+    input[type='submit']{
+        margin-bottom: 0.8rem;
+    }
+    .container{
+        margin: 1rem;
+    }
+    .founder-details,.registration,.contact-details,.occupations-details{
+        padding: 0.1rem 0.3rem;
+        /* width: 100%; */
+    }   
+}
+.comment {
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 1rem 0.3rem;
+    font-size: 18px;
+}
+.commenter {
+    float: left;
+}
+.commenter img {
+    width: 35px;
+    height: 35px;
+}
+.comment-text-area {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.textinput {
+    float: left;
+    width: 100%;
+    min-height: 75px;
+    outline: none;
+    resize: none;
+} 
+.valuePadding input {
+    border: none;
+    padding:0px;
+    outline: none;
+}
